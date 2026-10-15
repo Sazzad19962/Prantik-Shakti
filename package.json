@@ -1,0 +1,25 @@
+{
+  "name": "prantik-shakti",
+  "version": "1.0.0",
+  "private": true,
+  "description": "প্রান্তিক শক্তি লিমিটেড — ডায়নামিক ওয়েবসাইট ও অ্যাডমিন প্যানেল",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test --test-concurrency=1"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^4.22.3",
+    "mongodb": "^6.21.0",
+    "multer": "^2.4.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.3.1"
+  }
+}
