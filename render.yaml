@@ -1,0 +1,24 @@
+# Render Blueprint — প্রান্তিক শক্তি লিমিটেড ওয়েবসাইট
+# Render ড্যাশবোর্ড → New → Blueprint → এই রিপোজিটরি নির্বাচন করুন।
+services:
+  - type: web
+    name: prantik-shakti
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      - key: MONGODB_URI
+        sync: false        # Atlas-এর সংযোগ স্ট্রিং ড্যাশবোর্ডে বসান
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_PASSWORD
+        sync: false        # শক্তিশালী পাসওয়ার্ড ড্যাশবোর্ডে বসান
+      - key: SESSION_SECRET
+        generateValue: true

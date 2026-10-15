@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Runtime data (local JSON backend) — keep only the seed file
+data/*
+!data/seed.json
+
+npm-debug.log*
+.DS_Store
