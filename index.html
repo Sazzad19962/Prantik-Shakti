@@ -150,6 +150,8 @@ table.info th { width: 38%; color: var(--muted); font-weight: 500; }
 .modules { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
 .module { background: var(--bg); padding: 1.3rem; min-width: 0; }
 .module p { color: var(--muted); font-size: .94rem; margin-top: .3rem; }
+.module p.who { color: var(--fg); font-weight: 500; border-top: 1px solid var(--line); padding-top: .5rem; margin-top: .7rem; }
+.leader p.post { color: var(--gold); font-size: .85rem; margin-top: .1rem; letter-spacing: .02em; }
 @media (max-width: 900px) { .modules { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .modules { grid-template-columns: 1fr; } }
 
@@ -174,6 +176,7 @@ footer { background: var(--green); color: var(--on-green); border-top: 3px solid
 footer .wrap { padding-block: 2.2rem; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; font-size: .93rem; }
 footer .wrap > * { min-width: 0; }
 footer h3 { font-size: 1rem; color: var(--gold); margin-bottom: .5rem; }
+footer .wrap > div > p + p { margin-top: .5rem; opacity: .9; }
 footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .25rem; opacity: .9; }
 footer a { text-decoration: none; }
 footer a:hover { text-decoration: underline; }
@@ -261,8 +264,9 @@ footer a:hover { text-decoration: underline; }
               <tr><th scope="row">সংক্ষিপ্ত রূপ</th><td>PSL</td></tr>
               <tr><th scope="row">আইনগত ধরন</th><td>প্রাইভেট লিমিটেড কোম্পানি (শেয়ার দ্বারা সীমিত)</td></tr>
               <tr><th scope="row">মালিকানা</th><td>বাংলাদেশ আনসার ও ভিডিপি ওয়েলফেয়ার ট্রাস্ট</td></tr>
-              <tr><th scope="row">অনুমোদিত মূলধন</th><td>১০,০০,০০,০০০ (দশ কোটি) টাকা</td></tr>
-              <tr><th scope="row">প্রধান কার্যালয়</th><td>৩৭০/সি, জগতপুর হাউজ, মালিবাগ চৌধুরীপাড়া, খিলগাঁও, ঢাকা-১২১৯</td></tr>
+              <tr><th scope="row">অনুমোদিত মূলধন</th><td>১০,০০,০০,০০০ (দশ কোটি) টাকা; প্রতিটি ১০ টাকা মূল্যের ১,০০,০০,০০০টি সাধারণ শেয়ার</td></tr>
+              <tr><th scope="row">ট্রেড লাইসেন্স</th><td>TRAD/DSCC/037432/2024 (ঢাকা দক্ষিণ সিটি কর্পোরেশন)</td></tr>
+              <tr><th scope="row">প্রধান কার্যালয়</th><td>প্লট নং- ৩৭০/সি, জগতপুর হাউজ, মালিবাগ, চৌধুরীপাড়া, খিলগাঁও, ঢাকা-১২১৯</td></tr>
             </tbody>
           </table>
         </div>
@@ -282,8 +286,9 @@ footer a:hover { text-decoration: underline; }
           <div class="avatar" aria-hidden="true">চে</div>
           <div>
             <div class="role">চেয়ারম্যান</div>
-            <h3>মেজর জেনারেল আবদুল মোতালেব সাজ্জাদ মাহমুদ</h3>
-            <p>মহাপরিচালক, বাংলাদেশ আনসার ও গ্রাম প্রতিরক্ষা বাহিনী</p>
+            <h3>মেজর জেনারেল আব্দুল মোতালেব সাজ্জাদ মাহমুদ</h3>
+            <p class="post">এসজিপি, বিএএম, এনডিইউ, এএফডব্লিউসি, পিএসসি</p>
+            <p>মহাপরিচালক, বাংলাদেশ আনসার ও গ্রাম প্রতিরক্ষা বাহিনী। পদাধিকারবলে বাংলাদেশ আনসার ও ভিডিপি ওয়েলফেয়ার ট্রাস্ট এবং আনসার-ভিডিপি উন্নয়ন ব্যাংকের চেয়ারম্যান। জাতিসংঘ শান্তিরক্ষা মিশনে (কুয়েত ও আইভরি কোস্ট) দায়িত্ব পালন করেছেন; সেনা গৌরব পদক (এসজিপি) ও বাংলাদেশ আনসার পদকপ্রাপ্ত।</p>
           </div>
         </article>
         <article class="leader">
@@ -291,7 +296,7 @@ footer a:hover { text-decoration: underline; }
           <div>
             <div class="role">ব্যবস্থাপনা পরিচালক ও প্রধান নির্বাহী কর্মকর্তা</div>
             <h3>মো. রফিকুল ইসলাম</h3>
-            <p>প্রথম পরিচালকদের একজন (সংঘবিধির অনুচ্ছেদ ৩৭) এবং প্রথম ব্যবস্থাপনা পরিচালক (অনুচ্ছেদ ৫৩)</p>
+            <p>বাংলাদেশ সিভিল সার্ভিসের (১৮তম বিসিএস) জ্যেষ্ঠ কর্মকর্তা। কৌশলগত নেতৃত্ব, ডিজিটাল রূপান্তর, সফটওয়্যার উন্নয়ন এবং উন্নয়ন প্রকল্প (ডিপিপি/টিএপিপি) প্রণয়নে অভিজ্ঞ। কোম্পানির প্রথম ব্যবস্থাপনা পরিচালক।</p>
           </div>
         </article>
       </div>
@@ -429,14 +434,14 @@ footer a:hover { text-decoration: underline; }
     <div class="wrap">
       <div class="sec-head">
         <span class="kicker">সাংগঠনিক কাঠামো</span>
-        <h2>চারটি কার্যমডিউল</h2>
+        <h2>চারটি কার্যমডিউল ও দায়িত্বপ্রাপ্ত কর্মকর্তা</h2>
         <div class="rule"></div>
       </div>
       <div class="modules">
-        <div class="module"><h3>প্রশাসন ও পরিচালনা</h3><p>দৈনন্দিন প্রশাসন, সমন্বয় ও কার্যক্রম পরিচালনা</p></div>
-        <div class="module"><h3>কারিগরি ও আইটি</h3><p>সফটওয়্যার, প্ল্যাটফর্ম ও প্রযুক্তি সহায়তা</p></div>
-        <div class="module"><h3>হিসাব ও অর্থ</h3><p>আর্থিক ব্যবস্থাপনা, হিসাবরক্ষণ ও প্রতিবেদন</p></div>
-        <div class="module"><h3>তথ্য ও নথি ব্যবস্থাপনা</h3><p>নথি সংরক্ষণ, তথ্য ব্যবস্থাপনা ও যোগাযোগ</p></div>
+        <div class="module"><h3>প্রশাসন ও পরিচালনা</h3><p>দৈনন্দিন প্রশাসন, সমন্বয় ও কার্যক্রম পরিচালনা</p><p class="who">ম্যানেজার: সঞ্জয় ঘোষ মিঠু</p></div>
+        <div class="module"><h3>কারিগরি ও আইটি</h3><p>সফটওয়্যার, প্ল্যাটফর্ম ও প্রযুক্তি সহায়তা</p><p class="who">প্রকৌশলী: মো. আনামুল হক</p></div>
+        <div class="module"><h3>হিসাব ও অর্থ</h3><p>আর্থিক ব্যবস্থাপনা, হিসাবরক্ষণ ও প্রতিবেদন</p><p class="who">হিসাবরক্ষক: নজরুল ইসলাম</p></div>
+        <div class="module"><h3>তথ্য ও নথি ব্যবস্থাপনা</h3><p>নথি সংরক্ষণ, তথ্য ব্যবস্থাপনা ও যোগাযোগ</p><p class="who">কম্পিউটার অপারেটর: হৃদয় মিয়া</p></div>
       </div>
     </div>
   </section>
@@ -461,7 +466,7 @@ footer a:hover { text-decoration: underline; }
       </div>
       <div class="contact">
         <div>
-          <p class="addr" id="addr">৩৭০/সি, জগতপুর হাউজ, মালিবাগ চৌধুরীপাড়া, খিলগাঁও, ঢাকা-১২১৯</p>
+          <p class="addr" id="addr">প্লট নং- ৩৭০/সি, জগতপুর হাউজ, মালিবাগ, চৌধুরীপাড়া, খিলগাঁও, ঢাকা-১২১৯</p>
           <div class="row">
             <button class="copy" id="copy-addr" type="button">ঠিকানা কপি করুন</button>
             <a class="btn line" href="https://www.google.com/maps/search/?api=1&amp;query=Malibagh+Chowdhurypara+Khilgaon+Dhaka" target="_blank" rel="noopener">মানচিত্রে দেখুন</a>
@@ -469,9 +474,10 @@ footer a:hover { text-decoration: underline; }
           <p class="status" id="copy-status" aria-live="polite"></p>
         </div>
         <dl class="cinfo">
-          <dt>ফোন</dt><dd>শীঘ্রই প্রকাশ করা হবে</dd>
-          <dt>ই-মেইল</dt><dd>শীঘ্রই প্রকাশ করা হবে</dd>
-          <dt>অফিস সময়</dt><dd>সরকারি কর্মদিবস</dd>
+          <dt>ফোন</dt><dd>০১৩৩৫-৩০০৯৫৭</dd>
+          <dt>ই-মেইল</dt><dd>bawt25@gmail.com</dd>
+          <dt>মূল সংস্থা</dt><dd><a href="https://www.ansarvdp.gov.bd" target="_blank" rel="noopener">www.ansarvdp.gov.bd</a></dd>
+          <dt>অফিস সময়</dt><dd>রবিবার থেকে বৃহস্পতিবার, সকাল ৯টা থেকে বিকেল ৫টা</dd>
         </dl>
       </div>
     </div>
@@ -482,7 +488,9 @@ footer a:hover { text-decoration: underline; }
   <div class="wrap">
     <div>
       <h3>প্রান্তিক শক্তি লিমিটেড</h3>
-      <p>বাংলাদেশ আনসার ও ভিডিপি ওয়েলফেয়ার ট্রাস্টের মালিকানাধীন একটি প্রাইভেট লিমিটেড কোম্পানি।</p>
+      <p>“বাংলাদেশ আনসার ও ভিডিপি ওয়েলফেয়ার ট্রাস্টের একটি বাণিজ্যিক প্রতিষ্ঠান”</p>
+      <p>প্লট নং- ৩৭০/সি, জগতপুর হাউজ, মালিবাগ, চৌধুরীপাড়া, খিলগাঁও, ঢাকা-১২১৯</p>
+      <p>ফোন: ০১৩৩৫-৩০০৯৫৭ · ই-মেইল: bawt25@gmail.com</p>
     </div>
     <div>
       <h3>দ্রুত লিংক</h3>
@@ -497,7 +505,7 @@ footer a:hover { text-decoration: underline; }
       <h3>নিবন্ধন তথ্য</h3>
       <ul>
         <li>নিবন্ধন নম্বর (RJSC): প্রকাশিতব্য</li>
-        <li>ট্রেড লাইসেন্স: প্রকাশিতব্য</li>
+        <li>ট্রেড লাইসেন্স: TRAD/DSCC/037432/2024</li>
         <li>ই-টিআইএন: প্রকাশিতব্য</li>
       </ul>
     </div>
